@@ -14,3 +14,6 @@ def contact_view(request):
         message = request.POST.get('message')
         return redirect('thank_you')
     return render(request, 'contact.html')
+
+def thank_you_view(request):
+    return render(request, 'thank_you.html')
